@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Header from './header'
+import Content from './content'
+import Footer from './footer'
 
 class Introduction extends Component {
   constructor(props){
@@ -11,16 +14,9 @@ class Introduction extends Component {
   render() {
     return (
       <div>
-        <header>
-          <h1>Portfolio</h1>
-        </header>
-       
-        <content>
-          <p>Hello my name is</p>
-        </content>
-        <footer>
-          <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
-        </footer>
+        <Header/>
+        <Content/>
+        <Footer/>
        </div>
     );
   }
