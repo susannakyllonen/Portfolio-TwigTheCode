@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Introduction from './Components/Introduction'
+import Introduction from './components/Introduction'
 
 class Portfolio extends Component {
   constructor(props){
