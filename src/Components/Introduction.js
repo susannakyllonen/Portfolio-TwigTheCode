@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Introduction from './Components/Introduction'
 
-class Portfolio extends Component {
+class Introduction extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -13,10 +12,9 @@ class Portfolio extends Component {
     return (
       <div className="App">
         tekstiä tekstiä
-        <Introduction></Introduction>
       </div>
     );
   }
 }
 
-export default Portfolio;
+export default Introduction;
