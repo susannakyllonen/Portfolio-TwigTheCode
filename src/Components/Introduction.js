@@ -10,9 +10,18 @@ class Introduction extends Component {
   
   render() {
     return (
-      <div className="App">
-        tekstiä tekstiä
-      </div>
+      <div>
+        <header>
+          <h1>Portfolio</h1>
+        </header>
+       
+        <content>
+          <p>Hello my name is</p>
+        </content>
+        <footer>
+          <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+        </footer>
+       </div>
     );
   }
 }
