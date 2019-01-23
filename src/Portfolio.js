@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Introduction from './components/Introduction'
+import Main from './components/main'
 
 class Portfolio extends Component {
   constructor(props){
@@ -14,7 +14,7 @@ class Portfolio extends Component {
     console.log("apua",name) 
     return (
       <div className="App">
-        <Introduction name={name}></Introduction>
+        <Main name={name}></Main>
       </div>
     );
   }

@@ -4,7 +4,7 @@ import Content from './content'
 import Footer from './footer'
 import Hello from './hello'
 
-class Introduction extends Component {
+class Main extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -15,13 +15,13 @@ class Introduction extends Component {
   render() {
     return (
       <div>
-        <Header/>
         <Hello name={this.props.name}/>
         <Content/>
+        <Header/>
         <Footer/>
        </div>
     );
   }
 }
 
-export default Introduction;
+export default Main;
