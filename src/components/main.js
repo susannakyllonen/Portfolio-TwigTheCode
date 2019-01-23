@@ -3,6 +3,7 @@ import Header from './header'
 import Content from './content'
 import Footer from './footer'
 import Hello from './hello'
+import Introduction from './introduction'
 
 class Main extends Component {
   constructor(props){
@@ -16,6 +17,7 @@ class Main extends Component {
     return (
       <div>
         <Hello name={this.props.name}/>
+        <Introduction/>
         <Content/>
         <Header/>
         <Footer/>
