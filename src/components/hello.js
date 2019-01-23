@@ -10,9 +10,9 @@ class Hello extends Component {
   
   render() {
     return (
-      <header>
-      
-       </header>
+      <h1>
+      Hello, I'm {this.props.name}
+       </h1>
     );
   }
 }

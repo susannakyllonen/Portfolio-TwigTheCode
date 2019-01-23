@@ -16,7 +16,7 @@ class Introduction extends Component {
     return (
       <div>
         <Header/>
-        <Hello/>
+        <Hello name={this.props.name}/>
         <Content/>
         <Footer/>
        </div>

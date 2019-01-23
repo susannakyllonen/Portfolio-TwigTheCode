@@ -10,10 +10,11 @@ class Portfolio extends Component {
   }
   
   render() {
+    const name = this.props.match.params.name
+    console.log("apua",name) 
     return (
       <div className="App">
-        tekstiä tekstiä
-        <Introduction></Introduction>
+        <Introduction name={name}></Introduction>
       </div>
     );
   }
