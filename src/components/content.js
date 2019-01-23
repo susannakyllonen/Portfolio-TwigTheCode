@@ -10,9 +10,10 @@ class Content extends Component {
   
   render() {
     return (
-      <main>
-          
-      </main>
+      <section>
+          <article>Näyte 1</article>
+          <article>Näyte 2</article>
+      </section>
     );
   }
 }
