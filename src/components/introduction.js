@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {bindActionCreators, dispatch} from 'redux';
+import {connect} from 'react-redux';
+import * as actionCreators from '../actions/actionCreators'
 
 class Introduction extends Component {
   constructor(props){
@@ -11,10 +14,23 @@ class Introduction extends Component {
   render() {
     return (
       <summary>
-          I can do it all!
+        <p>{this.props.introduction.text}
+        </p>
+        <img src={this.props.introduction.image} alt={this.props.introduction.image}/>
       </summary>
     );
   }
 }
 
-export default Introduction;
+export const mapStateToProps = state => ({
+  introduction: state.introduction,
+});
+
+export const mapDispatchToProps = dispatch => {
+  return bindActionCreators(actionCreators, dispatch);
+};
+
+const Connected = connect(mapStateToProps, mapDispatchToProps)(Introduction);
+
+
+export default Connected;

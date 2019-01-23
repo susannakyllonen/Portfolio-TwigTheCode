@@ -1,11 +1,11 @@
-const name = (state= "no name", action) => {
+const introduction = (state = {}, action) => {
     switch (action.type) {
         // SINGLE TASK POSTjj
-        case "FAKE_DATA":
+        case "FAKE_INTRO":
             console.log('save fake data')
-            return action.name
+            return action.introduction
         default:
             return state
     }
 }
-export default name
+export default introduction
