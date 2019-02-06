@@ -1,21 +1,30 @@
 import React, { Component } from 'react';
+import {bindActionCreators, dispatch} from 'redux';
+import {connect} from 'react-redux';
+import * as actionCreators from '../actions/actionCreators'
 
 class Content extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      names : []
-    }
-  }
   
   render() {
+    console.log (this.props.projects)
     return (
       <section>
-          <article>Näyte 1</article>
-          <article>Näyte 2</article>
+           {
+             this.props.projects.map(project => <article>{project.title}</article>)
+          }
       </section>
     );
   }
 }
 
-export default Content;
+export const mapStateToProps = state => ({
+  projects: state.projects,
+});
+
+export const mapDispatchToProps = dispatch => {
+  return bindActionCreators(actionCreators, dispatch);
+};
+
+const Connected = connect(mapStateToProps, mapDispatchToProps)(Content);
+
+export default Connected;
