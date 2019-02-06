@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './header'
-import Content from './content'
+import Content from './projects'
 import Footer from './footer'
 import Hello from './hello'
 import Introduction from './introduction'

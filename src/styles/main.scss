@@ -1,5 +1,6 @@
 @import "colors.scss";
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,200,100,300');
+@import "projects.scss";
 
 $font: Work Sans;
 body {
@@ -14,6 +15,6 @@ body {
     background-color: $backgroundColor;
 }
 .main {
-        text-align: center;
+    text-align: center;
     grid-area: main;
 }

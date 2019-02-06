@@ -3,9 +3,13 @@ import { call, put, take, takeLatest, takeEvery, select } from 'redux-saga/effec
 const projects = [
     {
         title: "näyte1",
+        description: "Projektin täydellinen kuvaus, tänne tulee hirveeeeesti kamaa",
     },
     {
         title: "näyte2",
+    },
+    {
+        title: "näyte3",
     },
 ]
 
