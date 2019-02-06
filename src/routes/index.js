@@ -1,7 +1,7 @@
 import React from "react"
 import { Switch, Route } from "react-router-dom"
 import App from "../App";
-import Portfolio from "../Portfolio"
+import Portfolio from "../components/Portfolio"
 
 
 export default <Switch>

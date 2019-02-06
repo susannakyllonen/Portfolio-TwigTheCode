@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {bindActionCreators, dispatch} from 'redux';
 import {connect} from 'react-redux';
-import * as actionCreators from './actions/actionCreators'
-import Main from './components/main'
+import * as actionCreators from '../actions/actionCreators'
+import Main from './main'
 
 
 class Portfolio extends Component {
