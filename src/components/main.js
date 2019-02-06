@@ -15,7 +15,7 @@ class Main extends Component {
   
   render() {
     return (
-      <div>
+      <div className={this.props.className}>
         <Hello name={this.props.name}/>
         <Introduction/>
         <Content/>

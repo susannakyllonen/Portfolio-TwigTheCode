@@ -1,5 +1,10 @@
 @import "colors.scss";
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,200,100,300');
 
+$font: Work Sans;
+body {
+    font-family: $font;
+  }
 .container {
     display: grid;
     grid-template-rows: auto;
@@ -9,5 +14,6 @@
     background-color: $backgroundColor;
 }
 .main {
+        text-align: center;
     grid-area: main;
 }
