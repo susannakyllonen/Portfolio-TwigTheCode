@@ -1,14 +1,24 @@
-import React, {Component} from 'react';
-import {bindActionCreators, dispatch} from 'redux';
-import {connect} from 'react-redux';
+import React, {
+    Component
+} from 'react';
+import {
+    bindActionCreators,
+    dispatch
+} from 'redux';
+import {
+    connect
+} from 'react-redux';
 import * as actionCreators from '../actions/actionCreators'
 import Main from './main'
+import "../styles/main.scss"
 
 
 class Portfolio extends Component {
 
     componentWillMount() {
-        console.log('component will mount', { props: this.props })
+        console.log('component will mount', {
+            props: this.props
+        })
         this.props.getFakeData(this.props.match.params.name)
     }
 
@@ -20,10 +30,12 @@ class Portfolio extends Component {
     }
 
     render() {
-        return (
-            <div className="App">
-                <Main name={this.props.name}></Main>
-            </div>
+        return ( < div className = "App" >
+            <
+            Main name = {
+                this.props.name
+            } > < /Main>  < /
+            div >
         );
     }
 }
