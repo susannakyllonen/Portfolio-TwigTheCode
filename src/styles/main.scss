@@ -1,5 +1,13 @@
 @import "colors.scss";
 
-.App {
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-areas: 
+        ". main .";
     background-color: $backgroundColor;
+}
+.main {
+    grid-area: main;
 }

@@ -30,12 +30,10 @@ class Portfolio extends Component {
     }
 
     render() {
-        return ( < div className = "App" >
-            <
-            Main name = {
-                this.props.name
-            } > < /Main>  < /
-            div >
+        return ( 
+        <div className = "container">
+            <Main className = "main" name = {this.props.name} ></Main>
+            </div>
         );
     }
 }
