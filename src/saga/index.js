@@ -13,11 +13,15 @@ const projects = [
         title: "näyte3",
         description: "Topping apple pie cake carrot cake chocolate cake. Tootsie roll gingerbread gummi bears brownie bear claw jelly beans icing. Wafer marzipan gingerbread toffee icing dessert chocolate cake gummies. Ice cream halvah tootsie roll jelly tart chocolate cake candy canes. Dragée chocolate cake pastry chupa chups chocolate. Candy canes apple pie tiramisu fruitcake wafer. Muffin sweet muffin muffin. Chupa chups bonbon chupa chups cupcake. Topping topping sesame snaps. Cheesecake sweet roll tart biscuit chocolate cake jelly beans soufflé. Chocolate lemon drops marshmallow lollipop halvah sugar plum pudding. Dragée chocolate bar jelly gummi bears sweet candy chupa chups marzipan. Sugar plum marshmallow liquorice chocolate oat cake chocolate bar croissant gingerbread marzipan."
     },
+    {
+        title: "näyte4",
+        description: "Tiramisu sugar plum liquorice icing apple pie. Cheesecake chocolate gummies. Lemon drops gummies lollipop cake sesame snaps cupcake tootsie roll brownie soufflé. Sweet sweet halvah ice cream chocolate bar bonbon. Oat cake carrot cake powder sweet roll cake. Gummies jelly-o marzipan. Liquorice dragée marzipan. Wafer jujubes cake cupcake. Pie cake muffin. Cake donut cotton candy cookie. Icing brownie donut gummies tart macaroon donut danish. Toffee gummies jujubes tiramisu candy canes. Tootsie roll topping tiramisu chocolate cake soufflé."
+    },
 ]
 
 function* fake(action){
     console.log("HERE data is fetched from DB", {action})
-    const introduction = {text: "Minä olen norsunkesyttäjä", image: "kesyttaja.jpg"}
+    const introduction = {text: "Minä olen koodinkesyttäjä.", image: "kesyttaja.jpg"}
     yield put({type: "FAKE_NAME", name: 'Kirsi Kuikka'})
     yield put({type: "FAKE_INTRO", introduction})
     yield put({type: "FAKE_PROJECTS", projects})

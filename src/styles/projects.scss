@@ -5,12 +5,15 @@
     // TODO: get rid of px. ;)
     grid-column-gap: 10px;
     grid-row-gap: 15px;
+    background-color: $projectsBackgroundColor;
+    padding: 20px;
 }
 
 .project {
     border: 1px solid $projectBorder;
     border-radius: 2px;
     padding: 1rem;
+    background-color: $projectBackgroundColor;
 
     &__title{
         border-bottom: 1px solid red;
