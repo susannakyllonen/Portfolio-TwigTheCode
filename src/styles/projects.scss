@@ -7,16 +7,18 @@
     grid-row-gap: 15px;
     background-color: $projectsBackgroundColor;
     padding: 20px;
+    
 }
 
 .project {
-    border: 1px solid $projectBorder;
     border-radius: 2px;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem ;
     background-color: $projectBackgroundColor;
 
     &__title{
-        border-bottom: 1px solid red;
-        padding: 0 0 1em;
+        margin: 10px 0px 20px;
+        h3 {
+            font-size: 1.5rem;
+        }
     }
 }
