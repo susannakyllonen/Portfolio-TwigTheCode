@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
-import {bindActionCreators, dispatch} from 'redux';
-import {connect} from 'react-redux';
+import { bindActionCreators, dispatch } from 'redux';
+import { connect } from 'react-redux';
 import * as actionCreators from '../actions/actionCreators'
 
 class Introduction extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      names : []
+      names: []
     }
   }
-  
+
   render() {
     return (
-      <summary>
+      <summary className="introductionContainer">
+        <i class="fas fa-desktop"></i>
+        <h2>{this.props.introduction.title}</h2>
         <p>{this.props.introduction.text}
         </p>
-        <img src={this.props.introduction.image} alt={this.props.introduction.image}/>
       </summary>
     );
   }

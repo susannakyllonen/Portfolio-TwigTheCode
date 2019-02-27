@@ -18,3 +18,16 @@ body {
     text-align: center;
     grid-area: main;
 }
+.mainTitle {
+    color: $mainFontColor;
+    padding: 300px 0 300px;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    font-size: 3rem; 
+}
+.introductionContainer {
+    color: $mainFontColor;
+    width: 60%;
+    margin: 0 auto;
+    font-weight: 100;
+}

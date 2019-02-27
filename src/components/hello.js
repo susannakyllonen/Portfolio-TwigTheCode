@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
 class Hello extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      names : []
+      names: []
     }
   }
-  
+
   render() {
     return (
-      <h1>
-      Hello, I'm {this.props.name}
-       </h1>
+      <h1 className="mainTitle">
+        Hello, I'm {this.props.name}
+      </h1>
     );
   }
 }
