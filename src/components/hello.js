@@ -10,9 +10,14 @@ class Hello extends Component {
 
   render() {
     return (
+      <section className="helloSection">
       <h1 className="mainTitle">
         Hello, I'm {this.props.name}
       </h1>
+      <a href="#introduction" className="button">See more</a>
+      </section>
+
+
     );
   }
 }

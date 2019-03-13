@@ -12,6 +12,7 @@ class Projects extends Component {
       <section>
         <i className="section__icon far fa-gem"></i>
         <h2 className="section__title">Projects</h2>
+        <div className="underline"></div>
         <div className = "projects">
           {this.props.projects.map(project => <article className = "projects__article project">
           <div><h3 className = "project__title">{project.title}</h3></div>

@@ -23,7 +23,6 @@ section {
 }
 .mainTitle {
     color: $mainFontColor;
-    padding: 300px 0 300px;
     font-weight: 100;
     letter-spacing: 0.2em;
     font-size: 3rem; 
@@ -51,4 +50,31 @@ section {
     font-weight: 100;
     font-size: 2rem;
     letter-spacing: 0.1em;
+}
+
+.button {
+    border: 1px solid $mainFontColor;
+    padding: 15px 25px;
+}
+
+.helloSection {
+    padding: 300px 0 300px;
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $mainFontColor;
+        font-weight: 100;
+        letter-spacing: 0.05em;
+        &:hover {
+            background-color: $mainFontColor;
+            color: $backgroundColor;
+        }
+    }
+}
+
+.underline {
+    padding: 0 10px 10px 10px;
+    border-top: 1px solid $mainFontColor;
+    width: 50px;
+    margin: 0 auto;
 }
