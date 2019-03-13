@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './header'
+import Navigation from './navigation'
 import Content from './projects'
 import Footer from './footer'
 import Hello from './hello'
@@ -19,7 +19,7 @@ class Main extends Component {
         <Hello name={this.props.name}/>
         <Introduction/>
         <Content/>
-        <Header/>
+        <Navigation/>
         <Footer/>
        </div>
     );

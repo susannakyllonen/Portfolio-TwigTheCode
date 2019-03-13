@@ -12,7 +12,7 @@ class Projects extends Component {
            {
              // TODO: create react component Project. :D
              this.props.projects.map(project => <article className = "projects__article project">
-             <div className = "project__title"><h3>{project.title}</h3></div>
+             <div><h3 className = "project__title">{project.title}</h3></div>
              <div>{project.description}</div>
              </article>)
           }

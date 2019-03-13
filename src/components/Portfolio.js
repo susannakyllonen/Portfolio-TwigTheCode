@@ -12,6 +12,7 @@ import * as actionCreators from '../actions/actionCreators'
 import Main from './main'
 import "../styles/main.scss"
 
+// This is fake data frame
 
 class Portfolio extends Component {
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
+class Navigation extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -10,11 +10,11 @@ class Header extends Component {
   
   render() {
     return (
-      <header>
+      <nav>
       
-       </header>
+      </nav>
     );
   }
 }
 
-export default Header;
+export default Navigation;
