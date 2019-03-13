@@ -14,10 +14,9 @@ class Introduction extends Component {
   render() {
     return (
       <summary className="introductionContainer">
-        <i class="fas fa-desktop"></i>
-        <h2>{this.props.introduction.title}</h2>
-        <p>{this.props.introduction.text}
-        </p>
+        <i className="section__icon fas fa-crown"></i>
+        <h2 className="section__title">{this.props.introduction.title}</h2>
+        <p>{this.props.introduction.text}</p>
       </summary>
     );
   }

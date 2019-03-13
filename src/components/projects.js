@@ -5,17 +5,19 @@ import * as actionCreators from '../actions/actionCreators'
 
 class Projects extends Component {
   
+
   render() {
     console.log (this.props.projects)
     return (
-      <section className = "projects">
-           {
-             // TODO: create react component Project. :D
-             this.props.projects.map(project => <article className = "projects__article project">
-             <div><h3 className = "project__title">{project.title}</h3></div>
-             <div>{project.description}</div>
-             </article>)
-          }
+      <section>
+        <i className="section__icon far fa-gem"></i>
+        <h2 className="section__title">Projects</h2>
+        <div className = "projects">
+          {this.props.projects.map(project => <article className = "projects__article project">
+          <div><h3 className = "project__title">{project.title}</h3></div>
+          <div>{project.description}</div>
+          </article>)}
+        </div>
       </section>
     );
   }
