@@ -1,9 +1,10 @@
-import {combineReducers} from 'redux'
-import {connectRouter} from 'connected-react-router'
+import { combineReducers } from 'redux'
+import { connectRouter } from 'connected-react-router'
 
 import name from './name'
 import introduction from './introduction'
 import projects from './projects'
+import contact from './contact'
 
 // import card from './card';
 
@@ -12,4 +13,5 @@ export default history => combineReducers({
     name,
     introduction,
     projects,
+    contact,
 })

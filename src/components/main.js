@@ -4,24 +4,26 @@ import Content from './projects'
 import Footer from './footer'
 import Hello from './hello'
 import Introduction from './introduction'
+import Contact from './contact'
 
 class Main extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      names : []
+      names: []
     }
   }
-  
+
   render() {
     return (
       <div className={this.props.className}>
-        <Hello name={this.props.name}/>
-        <Introduction/>
-        <Content/>
-        <Navigation/>
-        <Footer/>
-       </div>
+        <Hello name={this.props.name} />
+        <Introduction />
+        <Content />
+        <Navigation />
+        <Contact />
+        <Footer />
+      </div>
     );
   }
 }
