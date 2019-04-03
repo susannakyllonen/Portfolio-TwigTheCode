@@ -12,11 +12,14 @@ class Contact extends Component {
   }
 
   render() {
+    const email = "mailto:" + this.props.contact.email
     return (
-      <div>
-        <i class="fab fa-fort-awesome"></i>
+      <section className="contactSection">
+        <i className="fab fa-fort-awesome section__icon"></i>
         <h2 className="section__title">{this.props.contact.title}</h2>
-      </div>
+        <p>{this.props.contact.text}</p>
+        <a href={email} className="button">Contact me</a>
+      </section>
     );
   }
 }
