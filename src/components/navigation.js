@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
 class Navigation extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      names : []
+      names: []
     }
   }
-  
+
   render() {
     return (
       <nav>
-      
+
       </nav>
     );
   }

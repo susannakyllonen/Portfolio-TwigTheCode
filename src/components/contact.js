@@ -18,7 +18,7 @@ class Contact extends Component {
         <i className="fab fa-fort-awesome section__icon"></i>
         <h2 className="section__title">{this.props.contact.title}</h2>
         <p>{this.props.contact.text}</p>
-        <a href={email} className="button">Contact me</a>
+        <a href={email} className="button">Contact</a>
       </section>
     );
   }

@@ -21,7 +21,7 @@ const projects = [
 
 function* fake(action) {
     console.log("HERE data is fetched from DB", { action })
-    const introduction = { title: "About Me", text: "Hello, my name is Mason Fox and I am a Front end web developer. I have been working in web for 2 years and have a focus in Front End Development: HTML, CSS, and Javascript. I currently work at Service Spring Corp as a Front End Developer and am the founder and lead developer of Squarecard.io." }
+    const introduction = { title: "About Us", text: "Hello, my name is Mason Fox and I am a Front end web developer. I have been working in web for 2 years and have a focus in Front End Development: HTML, CSS, and Javascript. I currently work at Service Spring Corp as a Front End Developer and am the founder and lead developer of Squarecard.io." }
     const contact = { title: 'My castle', email: 'kirsi.kuikka@feikki.kirsi', text: 'Send me mail, but nothing kinky.' }
     yield put({ type: "FAKE_NAME", name: 'Kirsi Kuikka' })
     yield put({ type: "FAKE_INTRO", introduction })
