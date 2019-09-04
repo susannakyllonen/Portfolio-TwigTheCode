@@ -17,10 +17,10 @@ class Main extends Component {
   render() {
     return (
       <div className={this.props.className}>
+        <Navigation />
         <Hello name={this.props.name} />
         <Introduction />
         <Content />
-        <Navigation />
         <Contact />
         <Footer />
       </div>

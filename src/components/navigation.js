@@ -10,8 +10,10 @@ class Navigation extends Component {
   
   render() {
     return (
-      <nav>
-      
+      <nav className="navigation__list">
+      <a href="#introduction">about</a>
+      <a href="#projects">projects</a>
+      <a>blog</a>
       </nav>
     );
   }

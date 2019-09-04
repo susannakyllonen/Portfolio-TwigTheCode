@@ -17,6 +17,14 @@ section {
     grid-template-areas: 
         ". main .";
 }
+.navigation__list {
+    display: block;
+    text-align: right;
+    position: fixed;
+    color: $mainFontColor;
+    text-transform: uppercase;
+    z-index: 1000;
+}
 .main {
     text-align: center;
     grid-area: main;
@@ -33,7 +41,6 @@ section {
     p {
         text-align: left;
     }
-
 }
 .introductionContainer, .contactSection {
     color: $mainFontColor;
