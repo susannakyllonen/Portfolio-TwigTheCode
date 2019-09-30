@@ -8,6 +8,14 @@ import contact from './contact'
 import footer from './footer'
 
 // import card from './card';
+const twiggers = (state=[],action) => {
+    switch(action.type){
+        case "FAKE_TWIGGERS":
+            return action.twiggers
+        default:
+            return state
+    }
+}
 
 export default history => combineReducers({
     router: connectRouter(history),
@@ -16,4 +24,5 @@ export default history => combineReducers({
     projects,
     contact,
     footer,
+    twiggers,
 })

@@ -1,6 +1,7 @@
-@import "colors.scss";
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,200,100,300');
-@import "projects.scss";
+
+@import "partials/colors.scss";
+@import "partials/projects.scss";
 
 $font: Work Sans;
 body {
